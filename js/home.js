@@ -7,5 +7,3 @@
     window.location = 'index.html';
   });
 })(jQuery);
-
-// 
