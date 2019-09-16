@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login V11</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--===============================================================================================-->
+  </head>
+  <body>
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-signup100 p-l-50 p-r-50 p-t-77 p-b-30">
+          <form class="login100-form validate-form">
+            <span class="login100-form-title p-b-55">
+              Sign Up
+            </span>
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <span class="login100-form-subtitle">Who are you?</span>
+            <div class="wrap-input100">
+              <!-- First name -->
+              <div
+                class="w-50 validate-input m-b-16 float-left pr-2"
+                data-validate="First name must be letters"
+              >
+                <input
+                  class="input100"
+                  type="text"
+                  name="first-name"
+                  placeholder="First name"
+                  data-required="abc"
+                />
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <span class="lnr lnr-user"></span>
+                </span>
+              </div>
+              <!-- Last name -->
+              <div
+                class="w-50 validate-input m-b-16 float-left pl-2"
+                data-validate="Last name must be letters"
+              >
+                <input
+                  class="input100 pl-4"
+                  type="text"
+                  name="last-name"
+                  placeholder="Last name"
+                  data-required="abc"
+                />
+                <span class="focus-input100"></span>
+              </div>
+            </div>
+            <!-- Nick name -->
+            <div
+              class="wrap-input100 validate-input m-b-16"
+              data-validate="Check the nickname, the first character must be a letter or _, the rest can include numbers"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="nick-name"
+                placeholder="Nick name*"
+                data-required="nickname"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-smile"></span>
+              </span>
+            </div>
+            <span class="login100-form-subtitle">Date of Birth*</span>
+            <div class="wrap-input100">
+              <!-- day -->
+              <div
+                class="w-25 validate-input m-b-16 float-left pr-2"
+                data-validate="Please select day"
+              >
+                <select
+                  class="input100 pl-4 not-selected"
+                  name="day"
+                  data-required="not-emply-select"
+                  disabled
+                >
+                  <option class="item-hint" value="not-selected">
+                    Day...
+                  </option>
+                </select>
+
+                <span class="focus-input100 mr-2"></span>
+              </div>
+              <!-- month -->
+              <div
+                class="w-50 validate-input m-b-16 float-left pr-2 pl-2"
+                data-validate="Please select month"
+              >
+                <select
+                  class="input100 pl-4 not-selected"
+                  name="month"
+                  data-required="not-emply-select"
+                  disabled
+                >
+                  <option class="item-hint" value="not-selected">
+                    Month...
+                  </option>
+                </select>
+                <span class="focus-input100"></span>
+              </div>
+              <!-- year -->
+              <div
+                class="w-25 validate-input m-b-16 float-left pl-2"
+                data-validate="Please select year"
+              >
+                <select
+                  class="input100 pl-4 not-selected"
+                  name="year"
+                  data-required="not-emply-select"
+                  disabled
+                >
+                  <option class="item-hint" value="not-selected">
+                    Year...
+                  </option>
+                </select>
+                <span class="focus-input100"></span>
+              </div>
+            </div>
+            <span class="login100-form-subtitle">Address*</span>
+            <div class="wrap-input100">
+              <!-- country -->
+              <div
+                class="w-50 validate-input m-b-16 float-left pr-2"
+                data-validate="Please select country"
+              >
+                <select
+                  class="input100 pl-4 not-selected"
+                  name="country"
+                  data-required="not-emply-select"
+                  disabled
+                >
+                  <option class="item-hint" value="not-selected">
+                    Country...
+                  </option>
+                </select>
+                <span class="focus-input100"></span>
+              </div>
+              <!-- city -->
+              <div
+                class="w-50 validate-input m-b-16 float-left pl-2"
+                data-validate="Please select city"
+              >
+                <select
+                  class="input100 pl-4 not-selected"
+                  name="city"
+                  data-required="not-emply-select"
+                  disabled
+                >
+                  <option class="item-hint" value="not-selected">
+                    City...
+                  </option>
+                </select>
+                <span class="focus-input100"></span>
+              </div>
+            </div>
+            <span class="login100-form-subtitle">Other</span>
+            <!-- gender -->
+            <div
+              class="wrap-input100 validate-input m-b-16"
+              data-validate="Please select gender"
+            >
+              <select
+                class="input100 pl-4 not-selected"
+                name="gender"
+                data-required="not-emply-select"
+              >
+                <option class="item-hint" value="not-selected"
+                  >Select gender, please*
+                </option>
+                <option class="item-for-select" value="male">Male</option>
+                <option class="item-for-select" value="female">Female</option>
+              </select>
+              <span class="focus-input100"></span>
+            </div>
+            <!-- phone -->
+            <div
+              class="wrap-input100 validate-input m-b-16"
+              data-validate="Please enter the phone number correctly"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="phone"
+                placeholder="Phone"
+                data-required="phone"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-phone"></span>
+              </span>
+            </div>
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <span class="login100-form-subtitle">Authorization data*</span>
+            <!-- email -->
+            <div
+              class="wrap-input100 validate-input m-b-16"
+              data-validate="Valid email is required: ex@abc.xyz"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="email"
+                placeholder="Email"
+                data-required="email"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-envelope"></span>
+              </span>
+            </div>
+
+            <!-- password -->
+            <div
+              class="wrap-input100 validate-input m-b-16"
+              data-validate="Password must be 6 characters in length, include latin letters and number"
+            >
+              <input
+                class="input100"
+                type="password"
+                name="pass"
+                placeholder="Password"
+                data-required="password"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-lock"></span>
+              </span>
+            </div>
+
+            <!-- repeat password -->
+            <div
+              class="wrap-input100 m-b-16"
+              data-validate="Retype your password correctly"
+            >
+              <input
+                class="input100"
+                type="password"
+                name="repeat-pass"
+                placeholder="Repeat password"
+                data-required="repeat-password"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <span class="lnr lnr-lock"></span>
+              </span>
+            </div>
+
+            <div class="contact100-form-checkbox m-l-4 p-t-75">
+              <input
+                class="input-checkbox100"
+                id="i-agree-with"
+                type="checkbox"
+                name="i-agree-with"
+              />
+              <label class="label-checkbox100" for="i-agree-with">
+                I agree with
+                <a class="txt1 bo1 hov1" href="#">terms and conditions</a>
+              </label>
+            </div>
+
+            <div class="container-login100-form-btn p-t-25">
+              <button class="login100-form-btn" id="submit-signup" disabled>
+                Sign up
+              </button>
+            </div>
+
+            <div class="text-center w-full p-t-75">
+              <span class="txt1">
+                Already a member?
+              </span>
+
+              <a class="txt1 bo1 hov1" href="index.html">
+                Login
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/signup.js"></script>
+  </body>
+</html>
