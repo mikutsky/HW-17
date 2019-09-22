@@ -27,7 +27,6 @@
       const email = $('input[name="email"]').val();
       const password = $('input[name="pass"]').val();
 
-      console.log(email, password);
       login(email, password);
     }
   });
